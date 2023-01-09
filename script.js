@@ -1,8 +1,8 @@
     const focusOnMe = document.getElementsByClassName('focusOnMe')[0];
     const mypopup = document.getElementById('mypopup');
 
-    focusOnMe.addEventListener("mouseover", showPopup);
-    focusOnMe.addEventListener("mouseout", hidePopup);
+    focusOnMe.addEventListener("focusin", showPopup);
+    focusOnMe.addEventListener("focusout", hidePopup);
 
     function showPopup(evt){
         const focusPos = focusOnMe.getBoundingClientRect();
